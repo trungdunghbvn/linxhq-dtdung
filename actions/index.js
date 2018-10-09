@@ -1,4 +1,4 @@
-import {ADD_COUNT, SEARCH_VIDEO } from '../constants';
+import {ADD_COUNT, SEARCH_VIDEO, CHANGE_VIDEO } from '../constants';
 
 export const addCount = () => {
     return {
@@ -9,5 +9,11 @@ export const changeSearchVideo = (text) => {
     return {
         type: SEARCH_VIDEO,
         text
+    }
+}
+export const changeVideo = (data) => {
+    return {
+        type: CHANGE_VIDEO,
+        data
     }
 }

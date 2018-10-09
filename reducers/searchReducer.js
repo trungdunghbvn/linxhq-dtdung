@@ -1,11 +1,13 @@
 import {
     ADD_COUNT,
-    SEARCH_VIDEO_RESPONSE
+    SEARCH_VIDEO_RESPONSE,
+    CHANGE_VIDEO,
 } from '../constants/index';
 
 const defaultState = {
     count:0,
-    listVideo: []
+    listVideo: [],
+    videoActive: ''
 };
 
 const searchReducer = (state = defaultState, action) => {
@@ -19,6 +21,11 @@ const searchReducer = (state = defaultState, action) => {
             return {
                 ...state,
                 listVideo: action.data
+            };
+        case CHANGE_VIDEO:
+            return {
+                ...state,
+                videoActive: action.data
             };
         default:
             return state;

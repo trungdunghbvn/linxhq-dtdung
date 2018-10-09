@@ -1,3 +1,4 @@
 export const ADD_COUNT = 'ADD_COUNT';
 export const SEARCH_VIDEO = 'SEARCH_VIDEO';
 export const SEARCH_VIDEO_RESPONSE = 'SEARCH_VIDEO_RESPONSE';
+export const CHANGE_VIDEO = 'CHANGE_VIDEO';

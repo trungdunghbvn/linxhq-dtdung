@@ -1,6 +1,7 @@
 import { createStackNavigator } from 'react-navigation';
 import Container from './Container';
 import Account from './Account';
+import Detail from './Detail';
 
 const Home = createStackNavigator({
 
@@ -15,6 +16,9 @@ const Home = createStackNavigator({
     navigationOptions:{
       headerTitle:'account'
     }
+  },
+  'Detail': {
+    screen: Detail,
   },
 });
 

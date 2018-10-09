@@ -1,9 +1,9 @@
 // import { select } from 'redux-saga/effects';
 import axios from 'axios';
-import { list } from '../data/data';
+import data from '../data/data.json';
 
 function* changeSearchVideo(action) {
-    return list
+    return data
     // return yield axios
     //     .get('data/data.json')
     //     .then(function (response) {

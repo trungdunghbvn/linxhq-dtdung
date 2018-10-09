@@ -1,28 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { Text, View, Button, TextInput, ActivityIndicator, ScrollView, FlatList, StyleSheet, WebView } from 'react-native';
-import { addCount, changeSearchVideo } from '../actions';
+import { Text, View, Button, TextInput, ActivityIndicator, ScrollView, FlatList, StyleSheet, Image, TouchableHighlight } from 'react-native';
+import { addCount, changeSearchVideo, changeVideo } from '../actions';
 import Video from 'react-native-video';
-// import { FlatList, ScrollView } from 'react-native-gesture-handler';
-// import Button from 'react-native-button';
-
-class FlatListVideo extends Component {
-    render() {
-        return (
-            <View key={this.props.item.id} style={{ height: 200, borderWidth: 1 }}>
-                <View style={{ flex: 50 }}>
-                    <Text>{this.props.item.name}</Text>
-                    <Text>{this.props.item.Describe}</Text>
-                    <WebView
-                        style={{ flex: 1 }}
-                        javaScriptEnabled={true}
-                        source={{ uri: 'https://www.youtube.com/embed/ZZ5LpwO-An4?rel=0&autoplay=0&showinfo=0&controls=0' }}
-                    />
-                </View>
-            </View>
-        )
-    }
-}
 
 class Container extends Component {
     constructor(props) {
@@ -43,11 +23,12 @@ class Container extends Component {
                     placeholder="Search"
                     onChangeText={(text) => params.onChangeSearch(text)}
                 />
-                <Button
-                    style={{ flex: 20 }}
-                    title="Login"
-                    onPress={() => navigation.navigate('Account')}
-                />
+                <TouchableHighlight style={{ flex: 20 }} onPress={() => navigation.navigate('Account')}>
+                    <Image
+                        style={{ width: 40, height: 40 }}
+                        source={require('../assets/images/user.png')}
+                    />
+                </TouchableHighlight>
             </View>
         );
         return { headerTitle }
@@ -60,38 +41,43 @@ class Container extends Component {
     setChangeSearch = (text) => {
         this.props.changeSearchVideo(text)
     }
-    test12 = () => {
-        console.log('eeeeee')
-    }
-    test = () => {
-        this.props.addCounts();
-    }
-    test123 =()=>{
-        console.log('hello');
-        this.setState({load: true})
-    }
-    test1234=()=>{
+    test1234 = () => {
         console.log('test')
+    }
+    viewVideo = (active) => {
+        this.props.changeVideo(active)
+        this.props.navigation.navigate('Detail')
     }
     render() {
         const { navigation } = this.props;
         const { listVideo } = this.props.searchReducer;
         return (
             // <ScrollView>
-                <FlatList
-                    refreshing={this.state.load}
-                    onRefresh={()=>this.test123()}
-                    onEndReachedThreshold={0}
-                    onEndReached={()=>this.test1234()}
-                    data={listVideo}
-                    keyExtractor={(item, index) => item.id}
-                    renderItem={({ item, index }) => {
-                        return (
-                            <FlatListVideo item={item} index={index} />
-                        );
-                    }}
-                >
-                </FlatList>
+            <FlatList
+                onEndReachedThreshold={0}
+                onEndReached={() => this.test1234()}
+                data={listVideo}
+                keyExtractor={(item, index) => item.id}
+                renderItem={({ item, index }) => {
+                    return (
+                        <View key={item.id} style={{ borderBottomWidth: 1, borderBottomColor: '#e1e2e1', padding: 10 }}>
+                            <View style={{ flex: 1, flexDirection: 'row' }}>
+                                <TouchableHighlight onPress={() => this.viewVideo(item)}>
+                                    <Image
+                                        style={{ width: 169, height: 94 }}
+                                        source={{ uri: item.image }}
+                                    />
+                                </TouchableHighlight>
+                                <View style={{ flex: 50, paddingLeft: 10 }}>
+                                    <Text>{item.name}</Text>
+                                    <Text>{item.Describe}</Text>
+                                </View>
+                            </View>
+                        </View>
+                    );
+                }}
+            >
+            </FlatList>
             // </ScrollView>
         );
     }
@@ -111,6 +97,7 @@ const mapStateToProps = state => ({
 const mapDispatchToProps = dispatch => ({
     addCounts: () => dispatch(addCount()),
     changeSearchVideo: (text) => dispatch(changeSearchVideo(text)),
+    changeVideo: (data) => dispatch(changeVideo(data)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Container);
