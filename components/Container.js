@@ -84,40 +84,42 @@ class Container extends Component {
         const filteredVideo = listVideo.filter(createFilter(this.state.search, ['name']))
         return (
             // <ScrollView>
-            <FlatList
-                data={filteredVideo}
-                keyExtractor={(item, index) => item.id}
-                renderItem={({ item, index }) => {
-                    return (
-                        <View key={item.id} style={{ borderBottomWidth: 1, borderBottomColor: '#e1e2e1', padding: 10 }}>
-                            <View style={{ flex: 1, flexDirection: 'row' }}>
-                                <TouchableHighlight style={{ flex: 50 }} onPress={() => this.viewVideo(item)}>
-                                    <Image
-                                        style={{ width: 169, height: 94 }}
-                                        source={{ uri: item.image }}
-                                    />
-                                </TouchableHighlight>
-                                <View style={{ flex: 50, paddingLeft: 10 }}>
-                                    <Text>{item.name}</Text>
-                                    <Text>{item.Describe}</Text>
-                                    <View style={{ flex: 1, flexDirection: 'row' }}>
-                                        <View style={{ flex: 1, flexDirection: 'row', marginTop: 10 }}>
-                                            <Image
-                                                style={{ width: 15, height: 15, marginTop: 2, marginRight: 5 }}
-                                                source={require('../assets/images/clock.png')}
-                                            />
-                                            <Text>{item.time}</Text>
-                                            {this.checkLike(item)}
+            <View>
+                <Text style={{textAlign: 'center', fontSize: 25}}>Tự Học HTML & CSS</Text>
+                <FlatList
+                    data={filteredVideo}
+                    keyExtractor={(item, index) => item.id}
+                    renderItem={({ item, index }) => {
+                        return (
+                            <View key={item.id} style={{ borderBottomWidth: 1, borderBottomColor: '#e1e2e1', padding: 10 }}>
+                                <View style={{ flex: 1, flexDirection: 'row' }}>
+                                    <TouchableHighlight style={{ flex: 50 }} onPress={() => this.viewVideo(item)}>
+                                        <Image
+                                            style={{ width: 169, height: 94 }}
+                                            source={{ uri: item.image }}
+                                        />
+                                    </TouchableHighlight>
+                                    <View style={{ flex: 50, paddingLeft: 10 }}>
+                                        <Text>{item.name}</Text>
+                                        <Text>{item.Describe}</Text>
+                                        <View style={{ flex: 1, flexDirection: 'row' }}>
+                                            <View style={{ flex: 1, flexDirection: 'row', marginTop: 10 }}>
+                                                <Image
+                                                    style={{ width: 15, height: 15, marginTop: 2, marginRight: 5 }}
+                                                    source={require('../assets/images/clock.png')}
+                                                />
+                                                <Text>{item.time}</Text>
+                                                {this.checkLike(item)}
+                                            </View>
                                         </View>
                                     </View>
                                 </View>
                             </View>
-                        </View>
-                    );
-                }}
-            >
-            </FlatList>
-            // </ScrollView>
+                        );
+                    }}
+                >
+                </FlatList>
+            </View>
         );
     }
 }
