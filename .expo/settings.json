@@ -3,5 +3,5 @@
   "lanType": "ip",
   "dev": true,
   "minify": false,
-  "urlRandomness": "s3-csm"
+  "urlRandomness": "42-rs2"
 }

@@ -5,9 +5,9 @@
     "slug": "linxhq",
     "privacy": "public",
     "sdkVersion": "30.0.0",
-    "facebookScheme": "cc967f942100e4ef109a20179e4360ef",
-    "FacebookAppID": "173524459922759",
-    "facebookDisplayName": "timviec365.vn",
+    // "facebookScheme": "cc967f942100e4ef109a20179e4360ef",
+    // "FacebookAppID": "173524459922759",
+    // "facebookDisplayName": "timviec365.vn",
     "platforms": [
       "ios",
       "android"
@@ -28,6 +28,9 @@
     ],
     "ios": {
       "supportsTablet": true
+    },
+    "android": {
+      "package": "com.linxhq.video"
     }
   }
 }
