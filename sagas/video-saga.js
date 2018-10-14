@@ -17,7 +17,6 @@ function* changeSearchVideo(action) {
     }
 }
 function* getUser(action) {
-    console.log(action)
     try {
         let data = yield call(Service.getToken, action);
         yield put({ type: GET_USER, data });

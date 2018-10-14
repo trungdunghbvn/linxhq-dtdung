@@ -19,7 +19,7 @@ class Account extends Component {
     }
   }
   viewVideo = (item) => {
-    this.props.changeVideo(active)
+    this.props.changeVideo(item)
     this.props.navigation.navigate('Detail')
   }
   listVideoLike = () => {
@@ -69,7 +69,6 @@ class Account extends Component {
     }
   }
   render() {
-    console.log(this.props.searchReducer.email)
     return (
       <View style={{ flex: 1 }}>
         {(() => {
@@ -77,7 +76,7 @@ class Account extends Component {
             return (
               <View style={style.container}>
                 <TouchableHighlight onPress={() => this.login()}>
-                  <View style={{ width: '50%', borderRadius: 4, padding: 24, backgroundColor: '#29487d' }}>
+                  <View style={{ width: '50%', borderRadius: 4, padding: 10, backgroundColor: '#29487d' }}>
                     <Text style={{ color: '#fff' }}>Login Facebook</Text>
                   </View>
                 </TouchableHighlight>

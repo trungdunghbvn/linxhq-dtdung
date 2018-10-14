@@ -5,7 +5,7 @@
         "name": "Bài 1 Các thẻ HTML thông dụng",
         "image":"https://i.ytimg.com/vi/m5b0Ebx5CTI/hqdefault.jpg",
         "Describe": "Day la video thu 1",
-        "time": "5:30"
+        "time": "7:27"
     },
     {
         "id": "2",
@@ -13,7 +13,7 @@
         "name": "Bài 2 Khái niệm khối và cách chuyển đổi khối",
         "image":"https://i.ytimg.com/vi/uBhnNk7QR9g/hqdefault.jpg",
         "Describe": "Day la video thu 2",
-        "time": "5:30"
+        "time": "14:08"
     },
     {
         "id": "3",
@@ -21,7 +21,7 @@
         "name": "Bài 3 Định dạng và độ ưu tiên",
         "image":"https://i.ytimg.com/vi/VLWbTe9N3pA/hqdefault.jpg",
         "Describe": "Day la video thu 3",
-        "time": "5:30"
+        "time": "15:54"
     },
     {
         "id": "4",
@@ -29,7 +29,7 @@
         "name": " Bài 4 Type Group",
         "image":"https://i.ytimg.com/vi/0VE6FrEkYhA/hqdefault.jpg",
         "Describe": "Day la video thu 4",
-        "time": "5:30"
+        "time": "13:47"
     },
     {
         "id": "5",
@@ -37,7 +37,7 @@
         "name": "Bài 5 Background Group",
         "image":"https://i.ytimg.com/vi/BjAgVIs8xuk/hqdefault.jpg",
         "Describe": "Day la video thu 5",
-        "time": "5:30"
+        "time": "14:01"
     },
     {
         "id": "6",
@@ -45,7 +45,7 @@
         "name": "Bài 6 Block Group",
         "image":"https://i.ytimg.com/vi/H5yQQJeOgHs/hqdefault.jpg",
         "Describe": "Day la video thu 6",
-        "time": "5:30"
+        "time": "16:56"
     },
     {
         "id": "7",
@@ -53,7 +53,7 @@
         "name": "Bài 7 Border Group",
         "image":"https://i.ytimg.com/vi/n6214PMSm4w/hqdefault.jpg",
         "Describe": "Day la video thu 7",
-        "time": "5:30"
+        "time": "17:10"
     },
     {
         "id": "8",
@@ -61,7 +61,7 @@
         "name": "Bài 8 Box Group Phần 1",
         "image":"https://i.ytimg.com/vi/qBjox_f-Bzg/hqdefault.jpg",
         "Describe": "Day la video thu 8",
-        "time": "5:30"
+        "time": "22:54"
     },
     {
         "id": "9",
@@ -69,7 +69,7 @@
         "name": "Bài 9 Box Group Phần 2",
         "image":"https://i.ytimg.com/vi/BetEk-iICqo/hqdefault.jpg",
         "Describe": "Day la video thu 9",
-        "time": "5:30"
+        "time": "13:05"
     },
     {
         "id": "10",
@@ -77,6 +77,6 @@
         "name": "Bài 10 List Group",
         "image":"https://i.ytimg.com/vi/XKSh9xxZCvY/hqdefault.jpg",
         "Describe": "Day la video thu 10",
-        "time": "5:30"
+        "time": "19:19"
     }
 ]

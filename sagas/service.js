@@ -22,7 +22,6 @@ function* getToken(action) {
             }
           })
         .then(function (response) {
-            console.log(response)
             return response.status === 200 ? response.data : [];
         })
         .catch(function (error) {
