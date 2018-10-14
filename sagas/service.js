@@ -14,7 +14,23 @@ function* changeSearchVideo(action) {
     //         console.log(error);
     //     });
 }
+function* getToken(action) {
+    return yield axios
+        .get('https://graph.facebook.com/me?fields=name,email', {
+            params: {
+                access_token: action.data
+            }
+          })
+        .then(function (response) {
+            console.log(response)
+            return response.status === 200 ? response.data : [];
+        })
+        .catch(function (error) {
+            console.log(error);
+        });
+}
 
 export const Service = {
     changeSearchVideo,
+    getToken
 };

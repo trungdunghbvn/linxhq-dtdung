@@ -1,7 +1,9 @@
 import { takeEvery, call, put } from 'redux-saga/effects';
 import {
-    SEARCH_VIDEO,
-    SEARCH_VIDEO_RESPONSE
+    GET_LIST,
+    GET_LIST_RESPONSE,
+    GET_TOKEN,
+    GET_USER
 } from '../constants/index';
 
 import { Service } from './service';
@@ -9,13 +11,23 @@ import { Service } from './service';
 function* changeSearchVideo(action) {
     try {
         let data = yield call(Service.changeSearchVideo, action);
-        yield put({ type: SEARCH_VIDEO_RESPONSE, data });
+        yield put({ type: GET_LIST_RESPONSE, data });
     } catch (error) {
-        yield put({ type: SEARCH_VIDEO_RESPONSE, error });
+        yield put({ type: GET_LIST_RESPONSE, error });
+    }
+}
+function* getUser(action) {
+    console.log(action)
+    try {
+        let data = yield call(Service.getToken, action);
+        yield put({ type: GET_USER, data });
+    } catch (error) {
+        yield put({ type: GET_USER, error });
     }
 }
 function* videoSaga() {
-    yield takeEvery(SEARCH_VIDEO, changeSearchVideo);
+    yield takeEvery(GET_LIST, changeSearchVideo);
+    yield takeEvery(GET_TOKEN, getUser);
 }
 
 export default videoSaga;

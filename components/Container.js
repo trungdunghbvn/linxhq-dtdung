@@ -1,16 +1,17 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Text, View, Button, TextInput, ActivityIndicator, ScrollView, FlatList, StyleSheet, Image, TouchableHighlight } from 'react-native';
-import { addCount, changeSearchVideo, changeVideo } from '../actions';
+import { addCount, getListVideo, changeVideo, changeLike, changeCloseLike } from '../actions';
 import Video from 'react-native-video';
-
+import { createFilter } from 'react-native-search-filter';
 class Container extends Component {
     constructor(props) {
         super(props);
-        this.props.changeSearchVideo();
+        this.props.getListVideo();
         this.state = {
             selectedItems: [],
-            load: true
+            load: true,
+            search: ''
         };
     }
 
@@ -39,7 +40,7 @@ class Container extends Component {
         });
     }
     setChangeSearch = (text) => {
-        this.props.changeSearchVideo(text)
+        this.setState({ search: text })
     }
     test1234 = () => {
         console.log('test')
@@ -48,21 +49,49 @@ class Container extends Component {
         this.props.changeVideo(active)
         this.props.navigation.navigate('Detail')
     }
+
+    checkLike = (item) => {
+        if (this.props.searchReducer.email === '') {
+            return <Text></Text>
+        } else {
+            if (this.props.searchReducer.like.indexOf(item) >= 0) {
+                return (
+                    <TouchableHighlight style={{ marginTop: 0, marginLeft: 10 }}
+                        onPress={() => this.props.changeCloseLike(item)}
+                    >
+                        <Image
+                            style={{ width: 15, height: 15, marginTop: 2, marginRight: 5 }}
+                            source={require('../assets/images/like.png')}
+                        />
+                    </TouchableHighlight>
+                )
+            } else {
+                return (
+                    <TouchableHighlight style={{ marginTop: 0, marginLeft: 10 }}
+                        onPress={() => this.props.changeLike(item)}
+                    >
+                        <Image
+                            style={{ width: 15, height: 15, marginTop: 2, marginRight: 5 }}
+                            source={require('../assets/images/close-like.png')}
+                        />
+                    </TouchableHighlight>
+                )
+            }
+        }
+    }
     render() {
-        const { navigation } = this.props;
         const { listVideo } = this.props.searchReducer;
+        const filteredVideo = listVideo.filter(createFilter(this.state.search, ['name']))
         return (
             // <ScrollView>
             <FlatList
-                onEndReachedThreshold={0}
-                onEndReached={() => this.test1234()}
-                data={listVideo}
+                data={filteredVideo}
                 keyExtractor={(item, index) => item.id}
                 renderItem={({ item, index }) => {
                     return (
                         <View key={item.id} style={{ borderBottomWidth: 1, borderBottomColor: '#e1e2e1', padding: 10 }}>
                             <View style={{ flex: 1, flexDirection: 'row' }}>
-                                <TouchableHighlight onPress={() => this.viewVideo(item)}>
+                                <TouchableHighlight style={{ flex: 50 }} onPress={() => this.viewVideo(item)}>
                                     <Image
                                         style={{ width: 169, height: 94 }}
                                         source={{ uri: item.image }}
@@ -71,6 +100,16 @@ class Container extends Component {
                                 <View style={{ flex: 50, paddingLeft: 10 }}>
                                     <Text>{item.name}</Text>
                                     <Text>{item.Describe}</Text>
+                                    <View style={{ flex: 1, flexDirection: 'row' }}>
+                                        <View style={{ flex: 1, flexDirection: 'row', marginTop: 10 }}>
+                                            <Image
+                                                style={{ width: 15, height: 15, marginTop: 2, marginRight: 5 }}
+                                                source={require('../assets/images/clock.png')}
+                                            />
+                                            <Text>{item.time}</Text>
+                                            {this.checkLike(item)}
+                                        </View>
+                                    </View>
                                 </View>
                             </View>
                         </View>
@@ -96,8 +135,10 @@ const mapStateToProps = state => ({
 });
 const mapDispatchToProps = dispatch => ({
     addCounts: () => dispatch(addCount()),
-    changeSearchVideo: (text) => dispatch(changeSearchVideo(text)),
+    getListVideo: () => dispatch(getListVideo()),
     changeVideo: (data) => dispatch(changeVideo(data)),
+    changeLike: (video) => dispatch(changeLike(video)),
+    changeCloseLike: (video) => dispatch(changeCloseLike(video)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Container);

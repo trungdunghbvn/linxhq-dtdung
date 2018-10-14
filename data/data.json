@@ -1,72 +1,82 @@
 [
     {
         "id": "1",
-        "link": "https://r1---sn-npoeene6.googlevideo.com/videoplayback?ei=2bq8W-6_Hcyy1AbBpoKwBA&expire=1539116857&requiressl=yes&ipbits=0&clen=13323558&c=WEB&gir=yes&pl=24&signature=78CAE364FE5276A689159B756EB8368DECFB0AD4.5AB14F6CC8637DFF619E13025E5F1AD7DDC403EB&ratebypass=yes&mime=video/mp4&sparams=clen,dur,ei,expire,gir,id,ip,ipbits,itag,lmt,mime,mip,mm,mn,ms,mv,pl,ratebypass,requiressl,source&fvip=1&itag=18&source=youtube&beids=9466585&id=o-APPidW5CuXnUklFOhnx3ntRjnW1lWWGBtU7l0fe6uK6x&key=cms1&ip=52.77.233.71&lmt=1518439929555239&dur=446.055&redirect_counter=1&cm2rm=sn-npoed7e&fexp=9466585,23763603&req_id=cc92184b2280a3ee&cms_redirect=yes&mip=118.71.196.147&mm=34&mn=sn-npoeene6&ms=ltu&mt=1539095213&mv=m",
+        "link": "video1.mp4",
         "name": "Bài 1 Các thẻ HTML thông dụng",
-        "image":"https://i.ytimg.com/vi/m5b0Ebx5CTI/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLApRIq_nspzqADoV43ihGyY262Ejw",
-        "Describe": "Day la video thu 1"
+        "image":"https://i.ytimg.com/vi/m5b0Ebx5CTI/hqdefault.jpg",
+        "Describe": "Day la video thu 1",
+        "time": "5:30"
     },
     {
         "id": "2",
-        "link": "https://r1---sn-npoe7ne6.googlevideo.com/videoplayback?lmt=1518439703441927&mime=video/mp4&expire=1539119729&ratebypass=yes&c=WEB&signature=34C319E4D992A40C81C6B74C0B0D57A1C2A22BB0.71DA82E9DECD6AA9D02248519C513130EA4EEC05&source=youtube&itag=22&ei=Eca8W8K3MsKWqQH117SwCg&fvip=2&requiressl=yes&key=cms1&id=o-AJnMBKXJ6fZ1HNI5N26TqsHXEDiA0s61VY7BXXppotYc&sparams=dur,ei,expire,id,ip,ipbits,ipbypass,itag,lmt,mime,mip,mm,mn,ms,mv,pl,ratebypass,requiressl,source&ip=123.30.210.150&dur=847.667&ipbits=0&pl=24&rm=sn-8qj-i5ole7e,sn-npol67e&fexp=23763603&req_id=fa17379f58aca3ee&ipbypass=yes&mip=118.71.196.147&redirect_counter=3&cm2rm=sn-i3bly7l&cms_redirect=yes&mm=34&mn=sn-npoe7ne6&ms=ltu&mt=1539098067&mv=m",
+        "link": "video2.mp4",
         "name": "Bài 2 Khái niệm khối và cách chuyển đổi khối",
-        "image":"https://i.ytimg.com/vi/uBhnNk7QR9g/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLCQgTAopoH2NNNg96wGhcAowXxBrw",
-        "Describe": "Day la video thu 2"
+        "image":"https://i.ytimg.com/vi/uBhnNk7QR9g/hqdefault.jpg",
+        "Describe": "Day la video thu 2",
+        "time": "5:30"
     },
     {
         "id": "3",
-        "link": "https://r6---sn-npoeene7.googlevideo.com/videoplayback?mime=video/mp4&source=youtube&key=cms1&c=WEB&expire=1539119822&ei=bsa8W_rWNZLRqQGauIiIDg&sparams=dur,ei,expire,id,ip,ipbits,ipbypass,itag,lmt,mime,mm,mn,ms,mv,pl,ratebypass,requiressl,source&requiressl=yes&fvip=6&ip=123.30.210.150&itag=22&beids=9466586&ratebypass=yes&ipbits=0&lmt=1520517398523658&pl=24&signature=61B574E097145087AB89D1A66C13613542980D76.7F6DF015F2A3AA72FA8E4A8FA1418F9EFD5CB7BA&id=o-AJVY7P3K6XW1-E65UcTdZv7MR5L0b3lT7wjaVcoVCejg&dur=954.015&redirect_counter=1&rm=sn-8qj-i5ose7e&fexp=9466586,23763603&req_id=e6c736fef9efa3ee&cms_redirect=yes&ipbypass=yes&mm=30&mn=sn-npoeene7&ms=nxu&mt=1539097582&mv=u",
+        "link": "video3.mp4",
         "name": "Bài 3 Định dạng và độ ưu tiên",
-        "image":"https://i.ytimg.com/vi/VLWbTe9N3pA/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLAiuigbpwBXZx0Y_uggDdEjxXfF-A",
-        "Describe": "Day la video thu 3"
+        "image":"https://i.ytimg.com/vi/VLWbTe9N3pA/hqdefault.jpg",
+        "Describe": "Day la video thu 3",
+        "time": "5:30"
     },
     {
         "id": "4",
-        "link": "https://r1---sn-42u-i5oed.googlevideo.com/videoplayback?c=WEB&ip=52.77.233.71&key=cms1&source=youtube&sparams=dur,ei,expire,id,ip,ipbits,ipbypass,itag,lmt,mime,mip,mm,mn,ms,mv,pl,ratebypass,requiressl,source&fvip=1&id=o-AMu3Rmn0PCLB_C3dZUZ_E4kIn33iEXm5LYhj3Fxp37zA&mime=video/mp4&pl=24&ei=2sa8W_XfKYL9oQP_04CgDA&signature=7DEF076B37D3708884FD1AD276B965DF7795DC56.2991B2E65672B3925B051004B20491B33684D791&requiressl=yes&lmt=1518439924560079&ratebypass=yes&itag=22&dur=826.723&ipbits=0&expire=1539119931&redirect_counter=1&rm=sn-npole7e&fexp=23763603&req_id=16c3ef56b166a3ee&cms_redirect=yes&ipbypass=yes&mip=118.71.196.147&mm=31&mn=sn-42u-i5oed&ms=au&mt=1539098190&mv=m",
+        "link": "video4.mp4",
         "name": " Bài 4 Type Group",
-        "image":"https://i.ytimg.com/vi/0VE6FrEkYhA/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLB7Xozy0CUcmLTvQ3tPrnW8marufg",
-        "Describe": "Day la video thu 4"
+        "image":"https://i.ytimg.com/vi/0VE6FrEkYhA/hqdefault.jpg",
+        "Describe": "Day la video thu 4",
+        "time": "5:30"
     },
     {
         "id": "5",
-        "link": "https://r2---sn-42u-i5oer.googlevideo.com/videoplayback?ipbits=0&ratebypass=yes&signature=67838F0E48EA26BDDFA86AFB922B52FFC6CA21DA.4CDEFFB5D730E6BC7B95DB1BB3EF40D48690B651&requiressl=yes&ip=52.77.233.71&key=cms1&expire=1539119965&dur=840.469&pl=24&source=youtube&id=o-APVyl0JUV7sEZ-L6Ms0KVXCmBCSnBJ7zPPf3so3V1iV9&mime=video/mp4&c=WEB&fvip=2&ei=_Ma8W43NNIKm8QP275OoBQ&sparams=dur,ei,expire,id,ip,ipbits,ipbypass,itag,lmt,mime,mip,mm,mn,ms,mv,pl,ratebypass,requiressl,source&itag=22&lmt=1518439911856876&redirect_counter=1&rm=sn-npoly7l&fexp=23763603&req_id=7367160de421a3ee&cms_redirect=yes&ipbypass=yes&mip=118.71.196.147&mm=31&mn=sn-42u-i5oer&ms=au&mt=1539098287&mv=m",
+        "link": "video5.mp4",
         "name": "Bài 5 Background Group",
-        "image":"https://i.ytimg.com/vi/BjAgVIs8xuk/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLCqA8HouQLeSk5ei6UFOhMX2hyGew",
-        "Describe": "Day la video thu 5"
+        "image":"https://i.ytimg.com/vi/BjAgVIs8xuk/hqdefault.jpg",
+        "Describe": "Day la video thu 5",
+        "time": "5:30"
     },
     {
         "id": "6",
-        "link": "https://r4---sn-i3beln7r.googlevideo.com/videoplayback?key=cms1&ip=123.30.210.150&pl=24&itag=22&dur=1015.756&source=youtube&fvip=3&sparams=dur,ei,expire,id,ip,ipbits,ipbypass,itag,lmt,mime,mip,mm,mn,ms,mv,pl,ratebypass,requiressl,source&ei=KMe8W52QBITNgAO8-aagAg&id=o-APzx__4Tm_cqmVX_CeR1ruf4yTCX-br3PHjrWgVcHop7&c=WEB&ratebypass=yes&mime=video/mp4&lmt=1520958262128907&signature=78EDDC9DF45C40B5682D0CFECE14030D1F24535F.3F0941664C6B00D6FE21D6E5772244F4AC596B74&requiressl=yes&ipbits=0&expire=1539120008&rm=sn-8qj-i5olz7k,sn-nposl7z&fexp=23763603&req_id=cac109c14476a3ee&redirect_counter=2&cms_redirect=yes&ipbypass=yes&mip=118.71.196.147&mm=30&mn=sn-i3beln7r&ms=nxu&mt=1539098332&mv=m",
+        "link": "video6.mp4",
         "name": "Bài 6 Block Group",
-        "image":"https://i.ytimg.com/vi/H5yQQJeOgHs/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLDtAzqCNSOt9_7jx84Q1hQ5v6I6aw",
-        "Describe": "Day la video thu 6"
+        "image":"https://i.ytimg.com/vi/H5yQQJeOgHs/hqdefault.jpg",
+        "Describe": "Day la video thu 6",
+        "time": "5:30"
     },
     {
         "id": "7",
-        "link": "https://r1---sn-i3belne6.googlevideo.com/videoplayback?pl=24&mime=video/mp4&id=o-ACU7UuhSrqLM0RJ2ZM9X6zOnJ22dQiExBECJSOc4Kvkp&sparams=dur,ei,expire,id,ip,ipbits,ipbypass,itag,lmt,mime,mip,mm,mn,ms,mv,pl,ratebypass,requiressl,source&ipbits=0&requiressl=yes&ip=123.30.210.150&source=youtube&signature=17B469EAB3D3C2FA21ECB1189D1616F2B3A4547C.7CEBFA7EFCA5ABDF29BB626EEDACCCB5F24C1310&ratebypass=yes&dur=1029.456&c=WEB&ei=R8e8W6OHD4GIiga34bXYDQ&lmt=1521059857221627&key=cms1&itag=22&fvip=1&expire=1539120039&rm=sn-8qj-i5oed7e,sn-nposl7e&fexp=23763603&req_id=f3d22192ba60a3ee&redirect_counter=2&cms_redirect=yes&ipbypass=yes&mip=118.71.196.147&mm=30&mn=sn-i3belne6&ms=nxu&mt=1539098332&mv=m",
+        "link": "video7.mp4",
         "name": "Bài 7 Border Group",
-        "image":"https://i.ytimg.com/vi/n6214PMSm4w/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLBChz8pYl5FrnBSIzF8vi4n3_mj5Q",
-        "Describe": "Day la video thu 7"
+        "image":"https://i.ytimg.com/vi/n6214PMSm4w/hqdefault.jpg",
+        "Describe": "Day la video thu 7",
+        "time": "5:30"
     },
     {
         "id": "8",
-        "link": "https://r5---sn-i3belne6.googlevideo.com/videoplayback?itag=22&signature=6F24C44E808C41339D0EFE7DA5C990E66770B622.1A3B76A639E7F1B92A6D3BC15C3F274B83D9517C&pl=24&id=o-AG4LiwKH8CMFbe3SuB9P6ZLMbtsQExOVFkH9_Smi4nxq&mime=video/mp4&sparams=dur,ei,expire,id,ip,ipbits,ipbypass,itag,lmt,mime,mip,mm,mn,ms,mv,pl,ratebypass,requiressl,source&requiressl=yes&ip=123.30.210.150&ei=dMe8W_ygPNebgQOz66XABQ&expire=1539120085&c=WEB&ratebypass=yes&fvip=5&dur=1373.971&ipbits=0&source=youtube&key=cms1&lmt=1520378921395882&rm=sn-8qj-i5oer76,sn-npoer76&fexp=23763603&req_id=20750cfb3fcda3ee&redirect_counter=2&cms_redirect=yes&ipbypass=yes&mip=118.71.196.147&mm=30&mn=sn-i3belne6&ms=nxu&mt=1539098459&mv=m",
+        "link": "video8.mp4",
         "name": "Bài 8 Box Group Phần 1",
-        "image":"https://i.ytimg.com/vi/qBjox_f-Bzg/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLDj_ATxWqSaB-6dhhPSFVX9jEWqtw",
-        "Describe": "Day la video thu 8"
+        "image":"https://i.ytimg.com/vi/qBjox_f-Bzg/hqdefault.jpg",
+        "Describe": "Day la video thu 8",
+        "time": "5:30"
     },
     {
         "id": "9",
-        "link": "https://r3---sn-i3belne6.googlevideo.com/videoplayback?requiressl=yes&mime=video/mp4&fvip=3&ip=123.30.210.150&expire=1539120116&c=WEB&key=cms1&ratebypass=yes&ei=lMe8W5yDD57RgAO7qrso&ipbits=0&signature=675A8A19B366B0A279C9EFA2630B9AC5459F28D6.6161FF5D59EC0079A4438BEC9B9D536C566ACF16&pl=24&sparams=dur,ei,expire,id,ip,ipbits,ipbypass,itag,lmt,mime,mip,mm,mn,ms,mv,pl,ratebypass,requiressl,source&id=o-AHd3SfGFWhjuIStj7IZqncns9j-DG0ni33l_CTec35Bn&dur=784.997&source=youtube&lmt=1518440176846584&itag=22&rm=sn-8qj-i5oes7k,sn-npole7s&fexp=23763603&req_id=bc36a5bd78b9a3ee&redirect_counter=2&cms_redirect=yes&ipbypass=yes&mip=118.71.196.147&mm=30&mn=sn-i3belne6&ms=nxu&mt=1539098398&mv=m",
+        "link": "video9.mp4",
         "name": "Bài 9 Box Group Phần 2",
-        "image":"https://i.ytimg.com/vi/BetEk-iICqo/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLBuKifRB1Mqsh9fywSjDHG0Gwru5Q",
-        "Describe": "Day la video thu 9"
+        "image":"https://i.ytimg.com/vi/BetEk-iICqo/hqdefault.jpg",
+        "Describe": "Day la video thu 9",
+        "time": "5:30"
     },
     {
         "id": "10",
-        "link": "https://r3---sn-i3b7knl6.googlevideo.com/videoplayback?ip=123.30.210.150&sparams=dur,ei,expire,id,ip,ipbits,ipbypass,itag,lmt,mime,mip,mm,mn,ms,mv,pl,ratebypass,requiressl,source&id=o-AMxen7K62cCN4rEIqhSdk19qeClXZqYKWA87g7zhCgeq&c=WEB&requiressl=yes&mime=video/mp4&key=cms1&signature=1FD0ECA5691DBEE91AFCF709E89D74C0CA74483B.3432B58C1BE4EE8AABF56A22B475BA5C848C715B&ratebypass=yes&lmt=1520350236781508&ipbits=0&dur=1158.397&expire=1539120152&source=youtube&pl=24&fvip=3&ei=uMe8W6aPBsTzqQGpoq-4Bw&itag=22&rm=sn-8qj-i5oll7s,sn-npoly7s&fexp=23763603&req_id=be898f520905a3ee&redirect_counter=2&cms_redirect=yes&ipbypass=yes&mip=118.71.196.147&mm=30&mn=sn-i3b7knl6&ms=nxu&mt=1539098459&mv=m",
+        "link": "video10.mp4",
         "name": "Bài 10 List Group",
-        "image":"https://i.ytimg.com/vi/XKSh9xxZCvY/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLDQiGB5uGBmVEw84V6eSuiHXrMihA",
-        "Describe": "Day la video thu 10"
+        "image":"https://i.ytimg.com/vi/XKSh9xxZCvY/hqdefault.jpg",
+        "Describe": "Day la video thu 10",
+        "time": "5:30"
     }
 ]
