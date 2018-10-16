@@ -14,7 +14,6 @@ class Container extends Component {
             search: ''
         };
     }
-
     static navigationOptions = ({ navigation }) => {
         const { params = {} } = navigation.state;
         let headerTitle = (
@@ -93,7 +92,7 @@ class Container extends Component {
                         return (
                             <View key={item.id} style={{ borderBottomWidth: 1, borderBottomColor: '#e1e2e1', padding: 10 }}>
                                 <View style={{ flex: 1, flexDirection: 'row' }}>
-                                    <TouchableHighlight style={{ flex: 50 }} onPress={() => this.viewVideo(item)}>
+                                    <TouchableHighlight style={{}} onPress={() => this.viewVideo(item)}>
                                         <Image
                                             style={{ width: 169, height: 94 }}
                                             source={{ uri: item.image }}

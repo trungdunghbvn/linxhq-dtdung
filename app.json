@@ -12,11 +12,11 @@
       "ios",
       "android"
     ],
-    "version": "1.0.0",
+    "version": "1.0.1",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/play.png",
     "splash": {
-      "image": "./assets/images/splash.png",
+      "image": "./assets/images/play.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
