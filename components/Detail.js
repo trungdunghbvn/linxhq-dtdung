@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { View, StyleSheet } from 'react-native';
+import { View, StyleSheet, Dimensions } from 'react-native';
 import { addCount } from '../actions';
 import { Video } from 'expo';
 import video1 from '../assets/videos/video1.mp4';
@@ -18,8 +18,11 @@ class Account extends Component {
     test = () => {
         this.props.addCounts();
     }
+    onLayout = (e) => {
+        console.log('test')
+    }
     render() {
-        let video = {video1};
+        let video = { video1 };
         switch (this.props.searchReducer.videoActive.link) {
             case 'video2.mp4':
                 video = video2
@@ -52,15 +55,19 @@ class Account extends Component {
                 video = video1
         }
         return (
-            <View style={styles.container}>
+            <View style={styles.container} onLayout={() => this.onLayout()}>
                 {(() => {
                     if (this.props.searchReducer.videoActive.link) {
                         return (
                             <Video
                                 source={video}
                                 shouldPlay
-                                resizeMode="cover"
+                                resizeMode={Expo.Video.RESIZE_MODE_CONTAIN}
                                 style={styles.backgroundVideo}
+                                isPortrait={true}
+                                playFromPositionMillis={0}
+                                fullscreenUpdate={Expo.Video.FULLSCREEN_UPDATE_PLAYER_WILL_PRESENT}
+                                useNativeControls={true}
                             />
                         )
                     }
@@ -71,17 +78,16 @@ class Account extends Component {
 }
 var styles = StyleSheet.create({
     backgroundVideo: {
-        position: 'absolute',
         top: 0,
         left: 0,
         bottom: 0,
         right: 0,
+        flex: 1,
     },
     container: {
+        flexDirection: 'column',
+        justifyContent: 'space-between',
         flex: 1,
-        backgroundColor: '#fff',
-        alignItems: 'center',
-        justifyContent: 'center',
     },
 });
 
